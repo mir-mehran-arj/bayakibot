@@ -18,7 +18,7 @@ def start(bot, update):
 
 
 def getCm(bot, update):
-    bot.sendMessage(chat_id=update.message.chat_id, text="Thanks. Our channel address: telegram.me/zerotoheroir")
+    bot.sendMessage(chat_id=update.message.chat_id, text="Thanks")
     userInfo = update.message.chat
     userMessage = update.message.text
     userId = userInfo['id']
@@ -36,7 +36,7 @@ def getCm(bot, update):
 def unknown(bot, update):
     bot.sendMessage(chat_id=update.message.chat_id, text="Unknown Command!")
 
-updater = Updater(token='398344625:AAGwZ74EKvNFWYrKNYaRdkb8doNfjxYb_uU')
+updater = Updater(token='398344625:AAEBd9EeQB-5YHeuzYtV2LCX87hXQCeSn80')
 dispatcher = updater.dispatcher
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
