@@ -14,7 +14,7 @@ def r():
 def start(bot, update):
     a = r()
     asd = "Your Wind is:" , a , " %"
-    bot.sendMessage(chat_id=update.message.chat_id, text=(asd))
+    bot.sendMessage(chat_id=update.message.chat_id, text=("Your Wind is:" , a , " %"))
 
 
 def getCm(bot, update):
